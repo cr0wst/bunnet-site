@@ -1,2 +1,100 @@
-<h1>Hello World</h1>
-<p>This is a test.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="I'm a Frontend software developer who builds sites and apps that help people reach their personal and professional goals."/>
+    <title>Bunnet: The RabbitMQ Message Viewer</title>
+    <link rel="stylesheet" href="/assets/tailwind.css">
+    <link rel="icon" href="/assets/images/logo.svg">
+</head>
+<body class="bg-no-repeat bg-gradient-to-bl from-orange-50 via-slate-100 to-orange-500">
+<header class="w-full h-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-wrap items-center justify-between gap-0 py-3">
+            <a href="/" aria-label="logo" class="flex items-center space-x-2">
+                <img src="/assets/images/logo.svg" alt="Bunnet Logo" class="h-12">
+                <h1 class="font-logo text-4xl font-extrabold">Bunnet</h1>
+            </a>
+            <div>
+                <ul class="flex gap-6 tracking-wide text-orange-400 items-center">
+                    <li>
+                        <a href="https://github.com/cr0wst/bunnet" class="hover:text-orange-700">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/cr0wst/bunnet/releases/latest"
+                           class="hover:text-orange-400 hover:bg-orange-200 block bg-orange-400 text-orange-50 rounded-md p-2">Download
+                            Latest Release</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  
+<!-- Hero Section -->
+<div class="text-center p-8">
+    <h1 class="text-4xl font-bold font-logo py-2">Streamline Your RabbitMQ Message Handling with Bunnet</h1>
+    <p class="mt-4 text-lg">
+        The open-source client that lets you connect, visualize, and manage AMQP messages with precision.
+    </p>
+</div>
+
+<!-- Work in Progress Notice Section -->
+<div class="mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mt-6 rounded-md shadow-sm">
+        <h2 class="text-xl font-semibold">Bunnet is a Work in Progress</h2>
+        <p class="mt-2">
+            Bunnet is currently in beta, and some bugs are to be expected. Please help us improve by reporting any
+            issues or suggesting new features on our <a
+                    href="http://github.com/cr0wst/bunnet/issues"
+                    class="font-medium underline hover:text-yellow-800">GitHub issues page</a>.
+        </p>
+    </div>
+</div>
+
+
+<!-- Image Section -->
+<div class="flex justify-center my-8">
+    <img src="/assets/images/bunnet.png" alt="Bunnet tool interface">
+</div>
+
+<!-- Features Section -->
+<div class="bg-slate-50 rounded-md p-4 text-slate-700">
+    <h2 class="text-3xl font-bold font-logo text-center">Why Choose Bunnet?</h2>
+    <div class="grid md:grid-cols-3 gap-6 mt-3 pt-3 border-t border-orange-500">
+        <div class="flex flex-col">
+            <h3 class="text-xl font-semibold">Visualize and Filter Messages</h3>
+            <p class="text-md mt-2 text-justify">
+                Gain clear insights into your message streams with powerful visualization tools and customizable
+                filters.
+            </p>
+        </div>
+        <div class="flex flex-col">
+            <h3 class="text-xl font-semibold">Seamless Integration</h3>
+            <p class="text-md mt-2 text-justify">
+                Integrates smoothly into your existing setup with auto-deleting queues to keep your system pristine.
+            </p>
+        </div>
+        <div class="flex flex-col">
+            <h3 class="text-xl font-semibold">Interactive Messaging</h3>
+            <p class="text-md mt-2 text-justify">
+                Interact directly with your messages: send updates back to exchanges and manipulate JSON data
+                effortlessly.
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Footer Section -->
+<footer class="bg-orange-700 text-white p-4 mt-12 w-full text-center">
+    <p class="font-medium">Copyright &copy; 2024 <a href="https://smcrow.com" class="underline text-slate-100">Steve Crow</a></p>
+    <p class="text-sm font-thin">
+        Bunnet is licensed under the <a href="https://github.com/cr0wst/bunnet/blob/main/LICENSE.md" class="underline hover:text-gray-300">GNU Public License</a>. This open-source license allows free use, modification, and distribution of the software while ensuring that all copies and derivatives remain available under the same terms.
+    </p>
+</footer>
+</body>
+</html>
