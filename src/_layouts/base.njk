@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="I'm a Frontend software developer who builds sites and apps that help people reach their personal and professional goals."/>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/tailwind.css' | url }}">
+    <link rel="icon" href="{{ '/assets/images/logo.svg' | url }}">
+</head>
+<body class="bg-no-repeat bg-gradient-to-bl from-orange-50 via-slate-100 to-orange-500">
+<header class="w-full h-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-wrap items-center justify-between gap-0 py-3">
+            <a href="/" aria-label="logo" class="flex items-center space-x-2">
+                <img src="{{ '/assets/images/logo.svg' | url }}" alt="Bunnet Logo" class="h-12">
+                <h1 class="font-logo text-4xl font-extrabold">Bunnet</h1>
+            </a>
+            <div>
+                <ul class="flex gap-6 tracking-wide text-orange-400 items-center">
+                    <li>
+                        <a href="https://github.com/cr0wst/bunnet" class="hover:text-orange-700">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/cr0wst/bunnet/releases/latest"
+                           class="hover:text-orange-400 hover:bg-orange-200 block bg-orange-400 text-orange-50 rounded-md p-2">Download
+                            Latest Release</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  {{ content | safe }}
+</div>
+<!-- Footer Section -->
+<footer class="bg-orange-700 text-white p-4 mt-12 w-full text-center">
+    <p class="font-medium">Copyright &copy; {{ currentYear }} <a href="https://smcrow.com" class="underline text-slate-100">Steve Crow</a></p>
+    <p class="text-sm font-thin">
+        Bunnet is licensed under the <a href="https://github.com/cr0wst/bunnet/blob/main/LICENSE.md" class="underline hover:text-gray-300">GNU Public License</a>. This open-source license allows free use, modification, and distribution of the software while ensuring that all copies and derivatives remain available under the same terms.
+    </p>
+</footer>
+</body>
+</html>
