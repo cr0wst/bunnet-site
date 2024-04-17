@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npx tailwindcss -i ./src/assets/tailwind.css -o ./_site/assets/tailwind.css --watch\" \"npx eleventy --serve\"",
-    "build-ghpages": "eleventy"
+    "build-ghpages": "tailwindcss -i ./src/assets/tailwind.css -o ./_site/assets/tailwind.css && eleventy"
   },
   "keywords": [],
   "author": "",
