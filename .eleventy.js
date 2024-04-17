@@ -1,5 +1,5 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/assets/css/style.css");
+  eleventyConfig.addPassthroughCopy("src/assets/tailwind.css");
   eleventyConfig.addWatchTarget("./src/assets/css/tailwind.css");
   eleventyConfig.addWatchTarget("tailwind.config.js");
   eleventyConfig.addPassthroughCopy("src/assets/images");
