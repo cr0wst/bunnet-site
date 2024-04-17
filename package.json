@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npx tailwindcss -i ./src/assets/tailwind.css -o ./_site/assets/tailwind.css --watch\" \"npx eleventy --serve\"",
-    "build-ghpages": "echo bunnetapp.com > CNAME && eleventy && tailwindcss -i ./src/assets/tailwind.css -o ./_site/assets/tailwind.css --minify"
+    "build-ghpages": "eleventy && tailwindcss -i ./src/assets/tailwind.css -o ./_site/assets/tailwind.css --minify"
   },
   "keywords": [],
   "author": "",

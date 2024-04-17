@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/assets/css/tailwind.css");
   eleventyConfig.addWatchTarget("tailwind.config.js");
   eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addGlobalData("currentYear", function () {
     return new Date().getFullYear();
